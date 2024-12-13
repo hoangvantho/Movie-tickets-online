@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Thêm vào file CSS chính của bạn */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+:root {
+  
+  --background: #2C2C2C;
+  /* Đặt màu nền thành đen */
+  --foreground: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #2C2C2C;
+    /* Bạn có thể giữ hoặc thay đổi màu nền tối */
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.text-yellow {
+  color: #F5CF49;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.text-black {
+  color: #2C2C2C;
+}
+.text-red{
+  color:red
+}
+.slick-dots li button:before {
+  color: white !important; /* Set dots to white */
+}

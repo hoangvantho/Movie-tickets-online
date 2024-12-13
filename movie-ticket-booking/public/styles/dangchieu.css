@@ -1,0 +1,100 @@
+.dang-chieu {
+    background-color: rgba(0, 0, 0, 0.45);
+    color: white;
+}
+
+.dang-chieu__title {
+    font-weight: bold;
+    color: #ffff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+
+.dang-chieu__container {
+    width: 100%;
+    max-width: 1410px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.dang-chieu__card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    padding: 10px;
+}
+
+.dang-chieu__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.dang-chieu__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.dang-chieu__card:hover {
+    transform: scale(1.05);
+}
+
+.dang-chieu__card:hover .dang-chieu__image {
+    transform: scale(1);
+}
+
+.dang-chieu__card:hover .dang-chieu__overlay {
+    opacity: 1;
+}
+
+.dang-chieu__card-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.dang-chieu__info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dang-chieu__info li {
+    margin-bottom: 0.3rem;
+}
+
+.dang-chieu__date {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #f5cf49;
+}
+
+@media (max-width: 1920px) {
+    .dang-chieu__container {
+        max-width: 1410px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }    
+}
+
+@media (max-width: 768px) {
+    .dang-chieu__card {
+        width: calc(50% - 2rem);
+    }
+}

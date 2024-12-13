@@ -1,0 +1,191 @@
+.sap-chieu {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 2rem 0;
+}
+.SapChieu-name {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: white;
+}
+
+.sap-chieu__title {
+    font-weight: bold;
+    color: #f5cf49;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 40px;
+}
+.sap-chieu__container {
+    width: 100%;
+    max-width: 1410px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.sap-chieu__row {
+    display: flex;
+    justify-content: center;
+}
+.sap-chieu__card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.sap-chieu__image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.sap-chieu__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.sap-chieu__card:hover {
+    transform: scale(1.05);
+}
+
+.sap-chieu__card:hover .sap-chieu__image {
+    transform: scale(1.1);
+}
+
+.sap-chieu__card:hover .sap-chieu__overlay {
+    opacity: 1;
+}
+
+.sap-chieu__card-title {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sap-chieu__info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 80%;
+}
+
+.sap-chieu__info li {
+    margin-bottom: 0.3rem;
+}
+
+.sap-chieu__date {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #f5cf49;
+}
+.button-container {
+    text-align: center;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.button-hover {
+    background-color: #f5cf49;
+    color: #000000;
+    width: 150px;
+    height: 40px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid;
+}
+.button-hover:hover {
+    background-color: #2C2C2C;
+    color: #ffffff;
+    border: #f5cf49 2px solid;
+    transition: background-color 0.5s ease;
+}
+
+@media (max-width: 1920px) {
+    .sap-chieu__container {
+        width: 100%;
+        max-width: 1410px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }    
+}
+
+@media (max-width: 1920px) and (min-width: 1440px) {
+    .sap-chieu__container {
+        max-width: 85%;
+        padding: 0 0.5rem;
+    }
+    .sap-chieu__card {
+        height: fit-content;
+    }
+}
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+    .sap-chieu__container {
+        padding: 0 0.5rem;
+        max-width: 85%;
+    }
+    .sap-chieu__card {
+        height: fit-content;
+    }
+    .sap-chieu__title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .sap-chieu__container {
+        padding: 0 0.5rem;
+        max-width: 85%;
+    }
+    .sap-chieu__card {
+        height: fit-content;
+    }
+    .sap-chieu__title {
+        font-size: 1.5rem;
+    }
+    .sap-chieu__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px)  {
+    .sap-chieu__card {
+        width: calc(50% - 2rem);
+    }
+    .sap-chieu__title {
+        font-size: 1.5rem;
+    }
+
+    .sap-chieu__image {
+        height: auto;
+    }
+
+    .sap-chieu__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
